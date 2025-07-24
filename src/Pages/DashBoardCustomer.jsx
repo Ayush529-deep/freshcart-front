@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import DashBoardSidebar from "../Components/DashboardSidebar";
+import DashBoardSidebar from "../Components/DashBoardSidebar";
 import DashboardHeader from "../Components/DashboardHeader";
-import DashBoardNavbar from "../Components/DashboardNavbar";
+import DashBoardNavbar from "../Components/DashBoardNavbar";
 
 function DashboardCustomer() {
   const [users, setUsers] = useState([]);
