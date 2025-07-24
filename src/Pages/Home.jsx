@@ -4,9 +4,9 @@ import HeroCarousel from '../Components/HeroCarousel'
 import FeaturedCategories from '../Components/FeaturedCategories'
 import Banner from '../Components/Banner'
 import ProductCard from '../Components/ProductCard'
-import BestSells from '../components/BestSells'
 import FeaturesSection from '../Components/FeaturesSection'
 import Footer from '../Components/Footer'
+import BestSells from '../Components/BestSells'
 
 function Home(){
   return (
