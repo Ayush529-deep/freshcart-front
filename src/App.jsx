@@ -4,7 +4,6 @@ import Login from './Pages/Login';
 import SignUp from './Pages/Signup';
 import ForgetPassword from './Pages/ForgetPassword';
 import Home from './Pages/Home';
-import WishListPage from './pages/WishListPage';
 import DashBoard from './Pages/DashBoard';
 import DashBoardProduct from './Pages/DashBoardProduct'
 import DashBoardAddProduct from './Pages/DashBoardAddproduct';
@@ -16,6 +15,7 @@ import Addnewaddress from './Components/Addnewaddress';
 import DashBoardOrder from './Pages/DashBoardOrder';
 import DashboardReview from './Pages/DashBoardReview';
 import DashboardCustomer from './Pages/DashBoardCustomer';
+import WishListPage from './Pages/WishListPage';
 // import CheckOutPage from './pages/CheckOutPage'
 
 
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/forgetpassword" element={<ForgetPassword />} /> 
         <Route path="/home" element={<Home />} />
-        <Route path="/wishlistpage" element={<WishListPage />} />
+        <Route path="/wishlistpage" element={<WishListPage/>} />
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path='/CheckOutPage' element={<CheckoutComp/>} />
         <Route path='/Addnewaddress' element={<Addnewaddress/>} />
