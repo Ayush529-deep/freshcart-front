@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Wishlist from '../components/Wishlist'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
+import Wishlist from '../Components/Wishlist'
 
 function WishListPage(){
   return (
