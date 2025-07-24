@@ -1,8 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-// import Navbar from "./Navbar";
-// import Footer from "./Footer";
 import Swal from "sweetalert2";
 import { useNavigate } from 'react-router-dom';
 
