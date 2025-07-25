@@ -18,7 +18,7 @@ const ShopCart = () => {
   }, []);
 
   let cartdata = () => {
-    axios.get("http://localhost:8080/allcartitem").then((res) => {
+    axios.get("https://freshcart-backend-9t2w.vercel.app/allcartitem").then((res) => {
         if (res.data.status) {
           setCartItems(res.data.ourcartitem);
         }
@@ -47,7 +47,7 @@ const ShopCart = () => {
     let removecartitem = (item) => {
       //    console.log(itemid)
       axios
-        .post("http://localhost:8080/removecartitem", item)
+        .post("https://freshcart-backend-9t2w.vercel.app/removecartitem", item)
         .then((res) => {
           if (res.data.status) {
             alert("remove item");
@@ -65,7 +65,7 @@ const ShopCart = () => {
     let increasequantity = () => {
       setquantity(++quantity);
 
-      axios.post("http://localhost:8080/updatequantity", { quantity, data });
+      axios.post("https://freshcart-backend-9t2w.vercel.app/updatequantity", { quantity, data });
 
       window.location.reload();
     };
@@ -73,7 +73,7 @@ const ShopCart = () => {
     let decreasequantity = () => {
       setquantity(--quantity);
 
-      axios.post("http://localhost:8080/updatequantity", { quantity, data });
+      axios.post("https://freshcart-backend-9t2w.vercel.app/updatequantity", { quantity, data });
       window.location.reload();
     };
 
@@ -161,7 +161,7 @@ const ShopCart = () => {
             <div className="space-y-6">
               {cartItems.map((item) => (
                 <>
-                  <CARTITEM data={item} />
+                  <CARTITEM  data={item} />
                 </>
               ))}
             </div>
@@ -197,6 +197,11 @@ const ShopCart = () => {
 
 export default ShopCart;
 
+
+
+
+
+
 // import React, { useEffect, useState } from "react";
 // import productimg13 from "../assets/productimg13.jpg"
 // import { FaTrashAlt } from "react-icons/fa"
@@ -215,7 +220,7 @@ export default ShopCart;
 //   }), []
 
 //   let addtocartitem = () => {
-//     axios.get("http://localhost:8080/addtocartproduct").then((res) => {
+//     axios.get("https://freshcart-backend-9t2w.vercel.app/addtocartproduct").then((res) => {
 //       if (res.data.status) {
 //         setaddtocart(res.data.addtocartproduct)
 //       }
@@ -237,7 +242,7 @@ export default ShopCart;
 //     }).then((result) => {
 //       if (result.isConfirmed) {
 
-//         axios.post("http://localhost:8080/deleteaddtocartproduct", item).then((res) => {
+//         axios.post("https://freshcart-backend-9t2w.vercel.app/deleteaddtocartproduct", item).then((res) => {
 //         if (res.data.status) {
 //           Swal.fire({
 //             title: "Delete Product !",

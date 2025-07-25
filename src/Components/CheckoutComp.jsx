@@ -13,7 +13,7 @@ function CheckoutComp() {
   const [addresses, setAddresses] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/alladdresses").then((res) => {
+    axios.get("https://freshcart-backend-9t2w.vercel.app/alladdresses").then((res) => {
       if (res.data.status) {
         setAddresses(res.data.addresses);
       }

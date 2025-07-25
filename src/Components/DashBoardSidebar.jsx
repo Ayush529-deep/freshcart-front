@@ -32,9 +32,9 @@ function DashBoardSidebar(){
         >
           <FaBox /> Products
         </Link>
-        <button className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 rounded text-gray-700">
+        {/* <button className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 rounded text-gray-700">
           <FaList /> Categories
-        </button>
+        </button> */}
 
         <Link 
         to="/DashBoard/DashBoardOrder"
@@ -42,9 +42,9 @@ function DashBoardSidebar(){
           <FaShoppingBag /> Orders
         </Link>
 
-        <button className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 rounded text-gray-700">
+        {/* <button className="flex items-center gap-3 px-4 py-2 hover:bg-gray-100 rounded text-gray-700">
           🧑🏽‍💼 Sellers / Vendors
-        </button>
+        </button> */}
 
       
       <Link

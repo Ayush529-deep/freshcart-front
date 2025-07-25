@@ -20,7 +20,7 @@ function Wishlist() {
 
 
   let wishlistitem = () => {
-    axios.get("http://localhost:8080/wishlistproduct").then((res) => {
+    axios.get("https://freshcart-backend-9t2w.vercel.app/wishlistproduct").then((res) => {
       if (res.data.status) {
         setwishlist(res.data.wishlistproduct)
       }
@@ -45,7 +45,7 @@ function Wishlist() {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        axios.post("http://localhost:8080/deletewishlistproduct", item).then((res) => {
+        axios.post("https://freshcart-backend-9t2w.vercel.app/deletewishlistproduct", item).then((res) => {
         if (res.data.status) {
           Swal.fire({
             title: "Delete Product !",
@@ -71,8 +71,12 @@ function Wishlist() {
 
 // addtocart---------------
 
-  let addtocart = (a) => {
-    axios.post("http://localhost:8080/addtocart", {a }).then((res) => {
+  let cart = (item) => {
+
+    // axios.post("https://freshcart-backend-9t2w.vercel.app/cart", {a })
+    axios.post("https://freshcart-backend-9t2w.vercel.app/cart", { cartitem: item })
+
+    .then((res) => {
         if (res.data.status) {
           Swal.fire({
             title: "addtocart Success !",
@@ -134,7 +138,7 @@ function Wishlist() {
                   <span className="bg-green-600 text-white px-3 py-1 rounded text-xs font-medium">In Stock</span>
                 </td>
                 <td className="p-4 text-gray-700">
-                  <button className="bg-green-600 text-white px-6 py-3 rounded flex items-center gap-2 hover:bg-green-700" onClick={() => addtocart(item)}>
+                  <button className="bg-green-600 text-white px-6 py-3 rounded flex items-center gap-2 hover:bg-green-700" onClick={() => cart(item)}>
                     Add to cart
                   </button>
                 </td>

@@ -23,7 +23,7 @@ function Login() {
 
 
   let loginbtn = () => {
-    axios.post("http://localhost:8080/login", { logindata }).then((res) => {
+    axios.post("https://freshcart-backend-9t2w.vercel.app/login", { logindata }).then((res) => {
       if (res.data.status) {
         Swal.fire({
           title: "Login Success !",
