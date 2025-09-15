@@ -153,7 +153,7 @@ function Navbar(){
     </div>
 
     <div className="relative group">
-      <span className="cursor-pointer hover:text-green-600">   <Link to="" >Home</Link>  </span>
+      <span className="cursor-pointer hover:text-green-600">   <Link to="/home">Home</Link>  </span>
       <ul className="absolute z-10 hidden group-hover:block bg-white border rounded-md mt-1 w-44 shadow-md text-gray-700">
         <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Home Default</li>
         <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Home Modern</li>
